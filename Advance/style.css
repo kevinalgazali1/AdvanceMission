@@ -1,0 +1,216 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container.index {
+    display: flex;
+    flex-direction: row;
+    height: 100svh;
+}
+
+.container.brand {
+    background-color: rgba(0, 85, 85, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+    width: 750px;
+    padding-top: 75px;
+}
+
+.Illustration {
+    width: 400px;
+}
+
+.container.login {
+    align-content: center;
+    text-align: center;
+    width: 750px;
+    font-size: larger;
+}
+
+.text.index {
+    display: flex;
+    margin-left: 175px;
+    margin-bottom: 1vh;
+    font-size: small;
+}
+
+.input {
+    width: 50vh;
+    height: 5vh;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.input::placeholder {
+    padding-left: 10px;
+}
+
+.container.register {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: smaller;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 85, 85, 1);
+    font-weight: bold;
+    display: inline-block;
+}
+
+a::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: rgba(0, 85, 85, 0.7);
+    transition: 300ms;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.google {
+    width: 3vh;
+}
+
+.button.index.login {
+    width: 50vh;
+    height: 5vh;
+    background-color: rgba(0, 85, 85, 1);
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.button.index.login:hover {
+    background-color: rgba(0, 85, 85, 0.7);
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+.button.index.google {
+    width: 50vh;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-left: 175px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.button.index.google:hover {
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    background-color: black;
+    color: white;
+}
+
+footer {
+    margin-top: 175px;
+    font-size: x-small;
+}
+
+.logo2 {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    width: 0;
+}
+
+@media screen and (max-width: 900px) {
+
+    html {
+        margin-top: 0;
+        height: 80%;
+        align-items: center;
+    }
+
+    body {
+        margin-top: 0;
+        background-color: rgba(0, 85, 85, 0.1);
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo2 {
+        visibility: visible;
+        width: 50%;
+        margin-left: 100px;
+    }
+
+    .text.index{
+        margin-left: 40px;
+    }
+
+    .container.brand {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .container.index {
+        display: contents;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .container.login{
+        width: 90%;
+        height: 100%;
+        border-radius: 20px;
+        background-color: white;
+        margin-left: 20px;
+    }
+
+    .input{
+        width: 80%;
+        height: 5vh;
+    }
+
+    .button.index.login {
+        width: 80%;
+        height: 5vh;
+    }
+
+    .button.index.google {
+        width: 80%;
+        height: 5vh;
+        margin: 0;
+        margin-left: 40px;
+    }
+
+    .container.register {
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 25svh;
+        text-align: center;
+    }
+}

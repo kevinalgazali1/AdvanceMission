@@ -1,0 +1,293 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.container.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px
+}
+
+.container-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px
+}
+
+.icon {
+    visibility: hidden;
+    width: 0;
+}
+
+.search1 {
+    width: 25vh;
+    height: 4vh;
+    border-radius: 50px;
+    border-style: solid;
+}
+
+.search1::placeholder {
+    padding-left: 15px;
+}
+
+.star {
+    color: grey;
+    font-size: 25px;
+}
+
+.button {
+    width: 15vh;
+    height: 5vh;
+    background-color: rgba(0, 85, 85, 1);
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+    background-color: rgba(0, 85, 85, 0.7);
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+.container-content {
+    display: flex;
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    width: 900px;
+}
+
+.container-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 85, 85, 1);
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+
+a::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: rgba(0, 85, 85, 0.7);
+    transition: 300ms;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.kategori {
+    width: fit-content;
+    height: 3vh;
+    border-radius: 15px;
+    border-style: solid;
+    background-color: whitesmoke;
+    border-color: gray;
+    cursor: pointer;
+}
+
+.container-card {
+    display: flex;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.imgprofile {
+    width: 25px;
+    height: 25px;
+}
+
+.kaki {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.container-right {
+    margin-left: 25px;
+    width: 600px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.nomor {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.number {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    gap: -10px;
+}
+
+.kakicard {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.penulis {
+    width: 50vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile-penulis {
+    display: flex;
+    gap: 10px;
+}
+
+.imgpenulis {
+    width: 50px;
+    height: 50px;
+}
+
+.btnPenulis {
+    border-radius: 20px;
+    border-style: solid;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(0, 85, 85, 1);
+    background-color: white;
+    color: rgba(0, 85, 85, 1);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btnPenulis:hover {
+    background-color: rgba(0, 85, 85, 1);
+    border-radius: 50px;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+footer {
+    margin: 50px;
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+
+    html {
+        margin-top: 0;
+        height: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body {
+        margin-top: 0;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        width: 80vh;
+        justify-content: flex-start;
+    }
+
+    .star {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .topik {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .search1 {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .button {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .icon {
+        visibility: visible;
+        width: 50px;
+    }
+
+    .category {
+        overflow: auto;
+    }
+
+    .container-content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container-left, .container-right {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .penulis {
+        width: 100%;
+    }
+}
